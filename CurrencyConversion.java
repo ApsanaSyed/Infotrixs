@@ -32,27 +32,22 @@ package com.info.Currency_Converter;
 	            		
 	            		switch (key) {
 						case 1:convertCurrency();
-							
-							break;
+						break;
 						case 2:DisplayFavouriteCurrencies();
-						
 						break;
 						case 3:addFavouriteCurrency();
-						
 						break;
 						case 4:updateFavouriteCurrency();
-						
 						break;
 						case 5:System.exit(0);
 					
 						default:System.out.println("Inavlid option,Please make sure to enter a Valid Option.");
 							break;
 						}
-	            	}catch (IOException  | NumberFormatException e) {
+	            	   }catch (IOException | NumberFormatException e) {
 	            		
 						System.out.println("InValid input,Please try again..");
 					}
-	      
 	                double amount = getUserInput();
 	                String sourceCurrency = getUserCurrency("Enter a source currency (e.g., USD):  ");
 	                String targetCurrency = getUserCurrency("Enter the target currency (e.g., EUR):  ");
