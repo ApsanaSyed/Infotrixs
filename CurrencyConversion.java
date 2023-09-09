@@ -1,11 +1,11 @@
 package com.info.Currency_Converter;
 
-    import java.io.BufferedReader;
+        import java.io.BufferedReader;
 	import java.io.IOException;
 	import java.io.InputStreamReader;
 	import java.net.HttpURLConnection;
 	import java.net.URL;
-    import org.json.JSONObject;
+        import org.json.JSONObject;
 	
 	public class CurrencyConversion
 	{
@@ -44,9 +44,9 @@ package com.info.Currency_Converter;
 						default:System.out.println("Inavlid option,Please make sure to enter a Valid Option.");
 							break;
 						}
-	            	   }catch (IOException | NumberFormatException e) {
-	            		
-						System.out.println("InValid input,Please try again..");
+	            	   }catch (IOException | NumberFormatException e)
+				       {
+				         System.out.println("InValid input,Please try again..");
 					}
 	                double amount = getUserInput();
 	                String sourceCurrency = getUserCurrency("Enter a source currency (e.g., USD):  ");
@@ -64,7 +64,7 @@ package com.info.Currency_Converter;
 	                if (!choice.equals("yes")) {
 	                	System.out.println("Thank you!!!!!!!!!!");
 	                    break; 
-	              }
+	               }
 	            }
 	        } catch (IOException e) {
 	            e.printStackTrace();
@@ -83,12 +83,9 @@ package com.info.Currency_Converter;
 			
 		}
 		private static void DisplayFavouriteCurrencies() {
-			// TODO Auto-generated method stub
-			
 		}
 		private static void convertCurrency() {
-			// TODO Auto-generated method stub
-			
+			// TODO Auto-generated method stud			
 		}
 		
 		private static double getUserInput() throws IOException 
